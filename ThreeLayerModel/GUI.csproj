@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="DangKi.aspx" />
     <Content Include="DangNhap.aspx" />
+    <Content Include="QuanLiLoaiSanPham.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -87,6 +88,13 @@
       <DependentUpon>DangNhap.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuanLiLoaiSanPham.aspx.cs">
+      <DependentUpon>QuanLiLoaiSanPham.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QuanLiLoaiSanPham.aspx.designer.cs">
+      <DependentUpon>QuanLiLoaiSanPham.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

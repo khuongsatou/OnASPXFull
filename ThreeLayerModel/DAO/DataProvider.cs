@@ -60,7 +60,6 @@ namespace DAO
         {
             SqlCommand cmd = new SqlCommand();
             int rowsAffected;
-            DataTable dtbKetQua = new DataTable();
             try
             {
                 cmd.Connection = OpenConnection();
@@ -82,7 +81,6 @@ namespace DAO
         {
             SqlCommand cmd = new SqlCommand();
             int rowsAffected;
-            DataTable dtbKetQua = new DataTable();
             try
             {
                 cmd.Connection = OpenConnection();
@@ -104,7 +102,6 @@ namespace DAO
         {
             SqlCommand cmd = new SqlCommand();
             int rowsAffected;
-            DataTable dtbKetQua = new DataTable();
             try
             {
                 cmd.Connection = OpenConnection();

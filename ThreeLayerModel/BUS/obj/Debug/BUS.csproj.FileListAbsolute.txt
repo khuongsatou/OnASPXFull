@@ -6,3 +6,11 @@ D:\GitHub\ThreeLayerModel\BUS\obj\Debug\BUS.pdb
 D:\GitHub\ThreeLayerModel\BUS\bin\Debug\DAO.dll
 D:\GitHub\ThreeLayerModel\BUS\bin\Debug\DAO.pdb
 D:\GitHub\ThreeLayerModel\BUS\obj\Debug\BUS.csproj.CopyComplete
+D:\GitHub\OnASPXFull\ThreeLayerModel\BUS\bin\Debug\BUS.dll
+D:\GitHub\OnASPXFull\ThreeLayerModel\BUS\bin\Debug\BUS.pdb
+D:\GitHub\OnASPXFull\ThreeLayerModel\BUS\bin\Debug\DAO.dll
+D:\GitHub\OnASPXFull\ThreeLayerModel\BUS\bin\Debug\DAO.pdb
+D:\GitHub\OnASPXFull\ThreeLayerModel\BUS\obj\Debug\BUS.csprojAssemblyReference.cache
+D:\GitHub\OnASPXFull\ThreeLayerModel\BUS\obj\Debug\BUS.csproj.CopyComplete
+D:\GitHub\OnASPXFull\ThreeLayerModel\BUS\obj\Debug\BUS.dll
+D:\GitHub\OnASPXFull\ThreeLayerModel\BUS\obj\Debug\BUS.pdb
