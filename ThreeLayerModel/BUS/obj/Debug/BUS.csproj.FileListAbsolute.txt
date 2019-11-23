@@ -14,3 +14,5 @@ D:\GitHub\OnASPXFull\ThreeLayerModel\BUS\obj\Debug\BUS.csprojAssemblyReference.c
 D:\GitHub\OnASPXFull\ThreeLayerModel\BUS\obj\Debug\BUS.csproj.CopyComplete
 D:\GitHub\OnASPXFull\ThreeLayerModel\BUS\obj\Debug\BUS.dll
 D:\GitHub\OnASPXFull\ThreeLayerModel\BUS\obj\Debug\BUS.pdb
+D:\GitHub\OnASPXFull\ThreeLayerModel\BUS\bin\Debug\DTO.dll
+D:\GitHub\OnASPXFull\ThreeLayerModel\BUS\bin\Debug\DTO.pdb

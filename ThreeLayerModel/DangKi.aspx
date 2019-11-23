@@ -42,7 +42,30 @@
                     </td>
                 </tr>
             </table>
+            <asp:GridView ID="grvDSTaiKhoan" runat="server" AutoGenerateColumns="False" DataKeyNames="TenTaiKhoan" OnRowCommand="grvDSTaiKhoan_RowCommand">
+                <Columns>
+                    <asp:BoundField DataField="TenTaiKhoan" HeaderText="TenTaiKhoan" ReadOnly="True" SortExpression="TenTaiKhoan" />
+                    <asp:BoundField DataField="MatKhau" HeaderText="MatKhau" SortExpression="MatKhau" />
+                    <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
+                    <asp:BoundField DataField="SDT" HeaderText="SDT" SortExpression="SDT" />
+                    <asp:BoundField DataField="DiaChi" HeaderText="DiaChi" SortExpression="DiaChi" />
+                    <asp:BoundField DataField="HoTen" HeaderText="HoTen" SortExpression="HoTen" />
+                    <asp:CheckBoxField DataField="LaAdmin" HeaderText="LaAdmin" SortExpression="LaAdmin" />
+                    <asp:BoundField DataField="AnhDaiDien" HeaderText="AnhDaiDien" SortExpression="AnhDaiDien" />
+                    <asp:CheckBoxField DataField="TrangThai" HeaderText="TrangThai" SortExpression="TrangThai" />
 
+                  
+                    <asp:TemplateField ShowHeader="False">
+                        <ItemTemplate>
+                            <asp:Button ID="btnChon" runat="server" CausesValidation="false" CommandName="btnChon" Text="Chọn" CommandArgument='<%#Eval("TenTaiKhoan") %>' />
+                        </ItemTemplate>
+                    </asp:TemplateField>
+
+                  
+                </Columns>
+
+            </asp:GridView>
+           <%-- <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:WebBanHangConnectionString %>" SelectCommand="SELECT * FROM [TaiKhoan]"></asp:SqlDataSource>--%>
         </div>
     </form>
 </body>

@@ -122,3 +122,5 @@ D:\GitHub\OnASPXFull\ThreeLayerModel\obj\Debug\GUI.csprojAssemblyReference.cache
 D:\GitHub\OnASPXFull\ThreeLayerModel\obj\Debug\GUI.csproj.CopyComplete
 D:\GitHub\OnASPXFull\ThreeLayerModel\obj\Debug\ThreeLayerModel.dll
 D:\GitHub\OnASPXFull\ThreeLayerModel\obj\Debug\ThreeLayerModel.pdb
+D:\GitHub\OnASPXFull\ThreeLayerModel\bin\DTO.dll
+D:\GitHub\OnASPXFull\ThreeLayerModel\bin\DTO.pdb

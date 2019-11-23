@@ -8,3 +8,6 @@ D:\GitHub\OnASPXFull\ThreeLayerModel\DAO\bin\Debug\DAO.pdb
 D:\GitHub\OnASPXFull\ThreeLayerModel\DAO\obj\Debug\DAO.csprojAssemblyReference.cache
 D:\GitHub\OnASPXFull\ThreeLayerModel\DAO\obj\Debug\DAO.dll
 D:\GitHub\OnASPXFull\ThreeLayerModel\DAO\obj\Debug\DAO.pdb
+D:\GitHub\OnASPXFull\ThreeLayerModel\DAO\bin\Debug\DTO.dll
+D:\GitHub\OnASPXFull\ThreeLayerModel\DAO\bin\Debug\DTO.pdb
+D:\GitHub\OnASPXFull\ThreeLayerModel\DAO\obj\Debug\DAO.csproj.CopyComplete

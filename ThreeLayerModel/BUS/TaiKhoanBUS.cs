@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DAO;
+using DTO;
 namespace BUS
 {
     public class TaiKhoanBUS
@@ -20,15 +21,32 @@ namespace BUS
             }
         }
 
-        public static bool KTDangKi(string tenTK, string mk,string email,string sdt,string diaChi,string hoTen)
+        public static bool KTDangKi(TaiKhoanDTO tk)
         {
-            if (TaiKhoanDAO.KTTKTonTai(tenTK))
+            if (TaiKhoanDAO.KTTKTonTai(tk.TenTaiKhoan))
             {
                 return false;
             }
             else
             {
-                return TaiKhoanDAO.Them(tenTK,mk,email,sdt,diaChi,hoTen);
+                return TaiKhoanDAO.Them(tk);
+            }
+        }
+
+        public static List<TaiKhoanDTO> LayDSTaiKhoan()
+        {
+            return TaiKhoanDAO.LayDSTaiKHoan();
+        }
+
+        public static TaiKhoanDTO LayThongTinTaiKhoan(string tenTK)
+        {
+            if (!TaiKhoanDAO.KTTKTonTai(tenTK))
+            {
+                return null;
+            }
+            else
+            {
+                return TaiKhoanDAO.LayThongTinTaiKhoan(tenTK);
             }
         }
     }

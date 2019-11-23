@@ -67,9 +67,35 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\all.min.css" />
+    <Content Include="css\bootstrap-grid.css" />
+    <Content Include="css\bootstrap-grid.min.css" />
+    <Content Include="css\bootstrap-reboot.css" />
+    <Content Include="css\bootstrap-reboot.min.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
     <Content Include="DangKi.aspx" />
     <Content Include="DangNhap.aspx" />
+    <Content Include="img\product\SP001.jpg" />
+    <Content Include="img\product\SP002.jpg" />
+    <Content Include="img\product\SP003.jpg" />
+    <Content Include="img\product\SP004.jpg" />
+    <Content Include="img\product\SP005.jpg" />
+    <Content Include="img\product\SP006.jpg" />
+    <Content Include="img\product\SP007.jpg" />
+    <Content Include="img\product\SP008.jpg" />
+    <Content Include="img\product\SP009.jpg" />
+    <Content Include="img\product\SP010.jpg" />
+    <Content Include="img\product\SP011.jpg" />
+    <Content Include="img\product\SP012.jpg" />
+    <Content Include="js\bootstrap.bundle.js" />
+    <Content Include="js\bootstrap.bundle.min.js" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\popper.min.js" />
     <Content Include="QuanLiLoaiSanPham.aspx" />
+    <Content Include="QuanLiSanPham.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -95,8 +121,25 @@
     <Compile Include="QuanLiLoaiSanPham.aspx.designer.cs">
       <DependentUpon>QuanLiLoaiSanPham.aspx</DependentUpon>
     </Compile>
+    <Compile Include="QuanLiSanPham.aspx.cs">
+      <DependentUpon>QuanLiSanPham.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QuanLiSanPham.aspx.designer.cs">
+      <DependentUpon>QuanLiSanPham.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\bootstrap-grid.css.map" />
+    <Content Include="css\bootstrap-grid.min.css.map" />
+    <Content Include="css\bootstrap-reboot.css.map" />
+    <Content Include="css\bootstrap-reboot.min.css.map" />
+    <Content Include="css\bootstrap.css.map" />
+    <Content Include="css\bootstrap.min.css.map" />
+    <Content Include="js\bootstrap.bundle.js.map" />
+    <Content Include="js\bootstrap.bundle.min.js.map" />
+    <Content Include="js\bootstrap.js.map" />
+    <Content Include="js\bootstrap.min.js.map" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -109,6 +152,10 @@
     <ProjectReference Include="BUS\BUS.csproj">
       <Project>{f7e56d75-d025-4d9d-99c2-506ead195508}</Project>
       <Name>BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="DTO\DTO.csproj">
+      <Project>{dac23b68-dadd-4af2-b406-b35e7147cf01}</Project>
+      <Name>DTO</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

@@ -1,0 +1,5 @@
+D:\GitHub\OnASPXFull\ThreeLayerModel\DTO\bin\Debug\DTO.dll
+D:\GitHub\OnASPXFull\ThreeLayerModel\DTO\bin\Debug\DTO.pdb
+D:\GitHub\OnASPXFull\ThreeLayerModel\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+D:\GitHub\OnASPXFull\ThreeLayerModel\DTO\obj\Debug\DTO.dll
+D:\GitHub\OnASPXFull\ThreeLayerModel\DTO\obj\Debug\DTO.pdb

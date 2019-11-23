@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using BUS;
+using DTO;
 
 namespace ThreeLayerModel
 {
@@ -12,23 +13,50 @@ namespace ThreeLayerModel
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!Page.IsPostBack)
+            {
+                grvDSTaiKhoan.DataSource = TaiKhoanBUS.LayDSTaiKhoan();
+                grvDSTaiKhoan.DataBind();
+            }
         }
         protected void ClickBtnDangKi(object sender, EventArgs e)
         {
-            string tenTaiKhoan = txtTenTaiKhoan.Text.ToString();
-            string matKhau = txtMatKhau.Text.ToString();
-            string email = txtEmail.Text.ToString();
-            string sdt = txtSDT.Text.ToString();
-            string diaChi = txtDiaChi.Text.ToString();
-            string hoTen = txtHoTen.Text.ToString();
-            if (TaiKhoanBUS.KTDangKi(tenTaiKhoan, matKhau,email,sdt,diaChi,hoTen))
+            TaiKhoanDTO tk = new TaiKhoanDTO();
+            tk.TenTaiKhoan = txtTenTaiKhoan.Text.ToString();
+            tk.MatKhau = txtMatKhau.Text.ToString();
+            tk.Email = txtEmail.Text.ToString();
+            tk.Sdt = txtSDT.Text.ToString();
+            tk.DiaChi = txtDiaChi.Text.ToString();
+            tk.HoTen = txtHoTen.Text.ToString();
+            if (TaiKhoanBUS.KTDangKi(tk))
             {
-                Response.Write("<script> alert('Thêm Thành Công'); </script>");
+                grvDSTaiKhoan.DataSource = TaiKhoanBUS.LayDSTaiKhoan();
+                grvDSTaiKhoan.DataBind();
+                //Response.Write("<script> alert('Thêm Thành Công'); </script>");
             }
             else
             {
                 Response.Write("<script> alert('Thêm Thất Bại'); </script>");
+            }
+        }
+
+        protected void grvDSTaiKhoan_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+            if (e.CommandName == "btnChon")
+            {
+                string tenTK = e.CommandArgument.ToString();
+                TaiKhoanDTO tk = TaiKhoanBUS.LayThongTinTaiKhoan(tenTK);
+                if (tk != null)
+                {
+                    txtTenTaiKhoan.Text = tk.TenTaiKhoan;
+                    txtMatKhau.Text = tk.MatKhau;
+                    txtEmail.Text = tk.Email;
+                    txtSDT.Text = tk.Sdt;
+                    txtDiaChi.Text = tk.DiaChi;
+                    txtHoTen.Text = tk.HoTen;
+                    
+
+                }
             }
         }
     }
