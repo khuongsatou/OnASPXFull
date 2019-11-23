@@ -1,0 +1,26 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Layout.master.cs" Inherits="InputASPX.masterPage.Layout" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+   
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <h1>Đây Là MasterPage</h1>
+           
+            <asp:ContentPlaceHolder ID="cph_header" runat="server">
+       
+            </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="cph_cọntent" runat="server">
+                
+            </asp:ContentPlaceHolder>
+             <asp:ContentPlaceHolder ID="cph_footer" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
