@@ -1,0 +1,5 @@
+D:\GitHub\ThreeLayerModel\DAO\bin\Debug\DAO.dll
+D:\GitHub\ThreeLayerModel\DAO\bin\Debug\DAO.pdb
+D:\GitHub\ThreeLayerModel\DAO\obj\Debug\DAO.csprojAssemblyReference.cache
+D:\GitHub\ThreeLayerModel\DAO\obj\Debug\DAO.dll
+D:\GitHub\ThreeLayerModel\DAO\obj\Debug\DAO.pdb
